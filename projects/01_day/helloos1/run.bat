@@ -1,2 +1,5 @@
-copy helloos.img ..\z_tools\qemu\fdimage0.bin
-..\z_tools\make.exe	-C ../z_tools/qemu
+call asm.bat helloos
+copy helloos.img ..\..\..\tolset\z_tools\qemu\fdimage0.bin
+..\..\..\tolset\z_tools\make.exe	-C ../../../tolset/z_tools/qemu
+
+del helloos.img
